@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detallesProducto.css">
+    <title>Foodtruck Chillan. Carro 6x2,5 metros</title>
+</head>
+
+<body>
+
+    <header class="header-detalle">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo de la Empresa">
+            </a>
+        </div>
+        <h1 class="Nombre-producto">Carro 6 x 2,5 metros</h1>
+        <nav class="nav-detalle">
+            <a href="index.html" class="btn-inicio">Inicio</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="wrapper">
+            <div class="container">
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <img src="carro6x2/1.jpeg" alt="Winter">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2">
+                <label for="c2" class="card">
+                    <img src="carro6x2/2.jpeg" alt="Digital Technology">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3">
+                <label for="c3" class="card">
+                    <img src="carro6x2/3.jpeg" alt="Globalization">
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4">
+                <label for="c4" class="card">
+                    <img src="carro6x2/4.jpeg" alt="New Technologies">
+                    <div class="row">
+                        <div class="icon">4</div>
+                        <div class="description">
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <main class="detalle-producto">
+
+        <section class="caracteristicas-producto">
+            <h2>Características del Producto</h2>
+            <ul class="lista-caracteristicas">
+                <li>
+                    <span class="icono-caracteristica">📏</span>
+                    <div class="detalle-caracteristica">
+                        <h3>Dimensiones</h3>
+                        <p id="Dimensiones">6m largo x 2,5m ancho</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="icono-caracteristica">⚖️</span>
+                    <div class="detalle-caracteristica">
+                        <h3>Peso</h3>
+                        <p id="Peso">2,5 toneladas</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="icono-caracteristica">🎨</span>
+                    <div class="detalle-caracteristica">
+                        <h3>Color</h3>
+                        <p id="Color">Disponible en cualquier color</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="icono-caracteristica">🔋</span>
+                    <div class="detalle-caracteristica">
+                        <h3>Material principal exterior</h3>
+                        <p id="Material-exterior">Aluminio compuesto</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="precios-tiempos">
+
+            <h2>Precios y Tiempos de Entrega</h2>
+            <div class="precios">
+                <div class="precio-item">
+                    <h3>Precio sin IVA</h3>
+                    <p class="precio">$9.800.000</p>
+                </div>
+                <div class="precio-item">
+                    <h3>Precio con IVA (19%)</h3>
+                    <p class="precio">$11.858.000</p>
+                </div>
+            </div>
+
+            <div class="tiempos">
+                <div class="tiempo-item">
+                    <h3>Tiempo de Fabricación</h3>
+                    <p>7-10 días hábiles</p>
+                </div>
+                <div class="tiempo-item">
+                    <h3>Tiempo de Envío</h3>
+                    <p>3-5 días hábiles</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <section class="acciones-producto">
+        <button class="btn-cotizar" id="btn-cotizar">Solicitar Cotización</button>
+        <button class="btn-comprar">Comprar Ahora</button>
+    </section>
+
+    <div class="overlay" id="overlay-cotizacion"></div>
+
+    <section id="cotizacion">
+        <button class="cerrar-cotizacion" id="cerrar-cotizacion">&times;</button>
+
+        <h2>Formulario de Cotización</h2>
+
+        <form id="formulario-cotizacion">
+            <!-- Nombre Completo -->
+            <div class="campo-formulario">
+                <label for="nombre-cotizacion">Nombre completo: *</label>
+                <input type="text" id="nombre-cotizacion" name="nombre-cotizacion" required
+                    placeholder="Escribe tu nombre completo">
+            </div>
+
+            <!-- Empresa/Organización -->
+            <div class="campo-formulario">
+                <label for="empresa-cotizacion">Empresa/Organización (opcional):</label>
+                <input type="text" id="empresa-cotizacion" name="empresa-cotizacion"
+                    placeholder="Nombre de la empresa/organización">
+            </div>
+
+            <!-- Teléfono -->
+            <div class="campo-formulario">
+                <label for="telefono-cotizacion">Teléfono (preferiblemente móvil): *</label>
+                <input type="tel" id="telefono-cotizacion" name="telefono-cotizacion" required
+                    placeholder="+56 9 1234 5678">
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div class="campo-formulario">
+                <label for="correo-cotizacion">Correo electrónico: *</label>
+                <input type="email" id="correo-cotizacion" name="correo-cotizacion" required
+                    placeholder="tuemail@ejemplo.com">
+            </div>
+
+            <!-- Dirección -->
+            <div class="campo-formulario">
+                <label for="direccion-cotizacion">Dirección (si aplica):</label>
+                <input type="text" id="direccion-cotizacion" name="direccion-cotizacion"
+                    placeholder="Dirección completa">
+            </div>
+
+            <!-- Color -->
+            <div class="campo-formulario">
+                <label for="color-cotizacion">Color del producto:</label>
+                <select id="color-cotizacion" name="color-cotizacion">
+                    <option value="" disabled selected>Selecciona un color</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="azul">Azul</option>
+                    <option value="personalizado">Personalizado</option>
+                </select>
+            </div>
+
+            <!-- Método de Entrega -->
+            <div class="campo-formulario">
+                <label for="metodo-entrega-cotizacion">Método de entrega: *</label>
+                <select id="metodo-entrega-cotizacion" name="metodo-entrega-cotizacion" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="envio">Envío</option>
+                    <option value="retiro">Retiro en tienda</option>
+                </select>
+            </div>
+
+            <!-- Información de Envío -->
+            <div id="info-envio-cotizacion" class="campo-formulario oculto">
+                <h3>Información para el envío:</h3>
+
+                <label for="direccion-envio-cotizacion">Dirección de envío: *</label>
+                <input type="text" id="direccion-envio-cotizacion" name="direccion-envio-cotizacion"
+                    placeholder="Dirección completa">
+
+                <label for="ciudad-cotizacion">Ciudad: *</label>
+                <input type="text" id="ciudad-cotizacion" name="ciudad-cotizacion" placeholder="Ciudad de destino">
+
+                <label for="codigo-postal-cotizacion">Código postal:</label>
+                <input type="text" id="codigo-postal-cotizacion" name="codigo-postal-cotizacion"
+                    placeholder="Código postal (opcional)">
+            </div>
+
+            <!-- Botón de Enviar -->
+            <button type="submit">Solicitar Cotización</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="informacion-contacto">
+                <h3>Información de Contacto</h3>
+                <p><strong>Teléfono:</strong> +569 7700 0655</p>
+                <p><strong>Correo:</strong> info@foodtruckchillan.com</p>
+                <p><strong>Dirección:</strong> Seis Ote. 22 Chillán, Ñuble</p>
+            </div>
+
+            <div class="mapa">
+                <h3>Nuestra Ubicación</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.507075819835!2d-72.09385845895964!3d-36.61417917241587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669290f5ad3f975%3A0x8fb6f3cdbeaefe27!2sFood%20truck%20chillan!5e0!3m2!1ses!2scl!4v1728699498058!5m2!1ses!2scl"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+        <div class="derechos">
+            <p>&copy; 2024 Foodtruck Chillan</p>
+        </div>
+    </footer>
+
+    <script src="detallesProducto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Foodtruck Chillan</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo de la Empresa" loading="lazy">
+        </div>
+        <nav role="navigation">
+            <button id="btn-contacto">Contacto</button>
+        </nav>
+    </header>
+
+    <section id="bienvenida">
+        <div class="contenedor-bienvenida">
+            <div class="imagen-producto">
+                <img src="img/bienv.jpg" alt="Imagen de producto destacado" loading="lazy">
+            </div>
+            <div class="texto-bienvenida">
+                <h1>Bienvenidos a Foodtruck Chillan</h1>
+                <p>Somos una empresa originaria de Chillán, listos para hacer realidad tu negocio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="contenedor-productos">
+
+            <div class="producto">
+                <a href="detallesProducto.html?id=1" class="ver-mas" data-id="1">
+                    <img src="carro6x2/1.jpeg" alt="Carro 4x2 Metros" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Carro 6 x 2,5 Metros</h3>
+                        <p>Carro Semi-Equipado</p>
+                        <div class="producto-precio">$9.800.000 (IVA incluido)</div>
+                    </div>
+                    <div class="producto-botones">
+                        <button class="cotizar">Cotizar</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="producto">
+                <a href="detallesProducto.html?id=2" class="ver-mas" data-id="2">
+                    <img src="carro4x2/1.jpg" alt="Carro 4x2 Metros" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Carro 4 x 2 Metros</h3>
+                        <p>Carro Semi-Equipado</p>
+                        <div class="producto-precio">$9.800.000 (IVA incluido)</div>
+                    </div>
+                    <div class="producto-botones">
+                        <button class="cotizar">Cotizar</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="producto">
+                <a href="detallesProducto.html?id=3" class="ver-mas" data-id="3">
+                    <img src="carro3x2/1.jpeg" alt="Carro 3x2 Metros" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Carro 6 x 2,5 Metros</h3>
+                        <p>Carro Semi-Equipado</p>
+                        <div class="producto-precio">$9.800.000 (IVA incluido)</div>
+                    </div>
+                    <div class="producto-botones">
+                        <button class="cotizar">Cotizar</button>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+    <section id="contacto">
+        <button class="cerrar-contacto" id="cerrar-contacto">&times;</button>
+
+        <h2>Contáctanos</h2>
+
+        <form id="formulario-contacto">
+
+            <div class="campo-formulario">
+                <label for="nombre">Nombre completo: *</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="email">Correo electrónico: *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="categoria">Motivo de contacto:</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Seleccione una opción</option>
+                    <option value="consulta">Consulta sobre producto</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="reclamo">Reclamos</option>
+                    <option value="cotizacion">Solicitud de cotización</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="asunto">Asunto: *</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="mensaje">Mensaje: *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="informacion-contacto">
+                <h3>Información de Contacto</h3>
+                <p><strong>Teléfono:</strong> +569 7700 0655</p>
+                <p><strong>Correo:</strong> info@foodtruckchillan.com</p>
+                <p><strong>Dirección:</strong> Seis Ote. 22 Chillán, Ñuble</p>
+            </div>
+            <div class="mapa">
+                <h3>Nuestra Ubicación</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.507075819835!2d-72.09385845895964!3d-36.61417917241587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669290f5ad3f975%3A0x8fb6f3cdbeaefe27!2sFood%20truck%20chillan!5e0!3m2!1ses!2scl!4v1728699498058!5m2!1ses!2scl"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div class="derechos">
+            <p>&copy; 2024 Foodtruck Chillan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
